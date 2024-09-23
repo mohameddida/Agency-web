@@ -22,8 +22,8 @@ const App = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-dark-blue to-transparent"></div>
 
             {/* Text Content */}
-            <div className="relative text-center px-4 sm:px-8 md:px-16 lg:px-24 max-w-screen-xl mx-auto">
-              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-shadow">
+            <div className="relative text-left px-4 sm:px-8 md:px-16 lg:px-24 max-w-screen-xl">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-shadow animate-fadeInUp">
                 Find Your <span className="text-yellow-300">Best</span> Tours
                 with <span className="text-yellow-300">Us</span>
               </p>
