@@ -1,6 +1,5 @@
 import React from "react";
-import { BiLogoGmail } from "react-icons/bi";
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { AiFillFacebook, AiFillInstagram, AiFillMail } from "react-icons/ai";
 import logo from "../assets/logoabout.png";
 
 const FooterSection = () => {
@@ -39,9 +38,9 @@ const FooterSection = () => {
         <div className="flex flex-col items-center">
           <h3 className="font-bold text-xl md:text-2xl mb-4">Social Links</h3>
           <div className="flex justify-center space-x-6 text-gray-500  text-2xl md:text-3xl">
-            <FaFacebookSquare className="hover:text-blue-800" />
-            <FaInstagramSquare className="hover:text-blue-800" />
-            <BiLogoGmail className="hover:text-blue-800" />
+            <AiFillFacebook className="hover:text-blue-800" />
+            <AiFillInstagram className="hover:text-blue-800" />
+            <AiFillMail className="hover:text-blue-800" />
           </div>
         </div>
       </div>

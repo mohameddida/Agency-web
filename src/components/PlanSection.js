@@ -28,7 +28,7 @@ const PlanSection = () => {
               Excursion
             </h3>
             <p className="text-gray-600 mt-1 text-sm sm:text-base">
-              Oasis de montagne Chebika, Tamerza, Mides
+              Oasis de montagne Chebika, Tamerza, Mides, Ong Jmal
             </p>
           </div>
 
