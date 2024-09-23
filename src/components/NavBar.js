@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png"; // Import your logo
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState("bg-transparent");
   const [open, setOpen] = useState(false);
 
-  // Function to change navbar background on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -17,7 +16,6 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -25,14 +23,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
+      className={`fixed  w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
     >
-      <div className="container mx-auto p-4 flex items-center justify-between">
-        <div className="text-white font-bold text-lg flex">
-          <img className="block w-20 h-20" src={logo} alt="Logo" />
+      <div className="container mx-auto p-6 flex items-center md:justify-between justify-around">
+        <div className="flex items-center">
+          <img className="w-16 h-16 md:w-20 md:h-20" src={logo} alt="Logo" />
         </div>
 
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-6 text-lg">
           <a href="#home" className="text-white hover:text-gray-200">
             Home
           </a>
@@ -70,21 +68,22 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-blue-950 text-white p-4">
-          <a href="#home" className="block py-2 hover:text-gray-200">
-            Home
-          </a>
-          <a href="#about" className="block py-2 hover:text-gray-200">
-            About
-          </a>
-          <a href="#services" className="block py-2 hover:text-gray-200">
-            Services
-          </a>
-          <a href="#contact" className="block py-2 hover:text-gray-200">
-            Contact
-          </a>
+        <div className="md:hidden bg-blue-950 text-white">
+          <div className="p-4 space-y-2 text-center">
+            <a href="#home" className="block py-2 hover:text-gray-200">
+              Home
+            </a>
+            <a href="#about" className="block py-2 hover:text-gray-200">
+              About
+            </a>
+            <a href="#services" className="block py-2 hover:text-gray-200">
+              Services
+            </a>
+            <a href="#contact" className="block py-2 hover:text-gray-200">
+              Contact
+            </a>
+          </div>
         </div>
       )}
     </nav>

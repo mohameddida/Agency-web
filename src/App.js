@@ -9,16 +9,17 @@ import PlanSection from "./components/PlanSection";
 const App = () => {
   return (
     <div className="font-sans text-gray-900 ">
-      <header className="relative ">
+      <header className="relative w-100">
         <Navbar />
       </header>
 
       <main className="relative ">
-        <section id="home" className="relative">
-          <div className="bg-custom-image bg-cover bg-center h-screen flex items-center">
+        <section id="home" className="relative w-100 ">
+          <div className="bg-custom-image bg-cover bg-center h-screen flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-b from-dark-blue to-transparent"></div>
-            <div className="container absolute w-96  text-left mx-16">
-              <p className="text-4xl md:text-5xl lg:text-6xl  font-bold text-white text-shadow">
+
+            <div className="relative text-left px-4 sm:px-8 md:px-16 lg:px-24 max-w-screen-xl mx-auto">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-shadow">
                 Find Your <span className="text-yellow-300">Best</span> Tours
                 with <span className="text-yellow-300">Us</span>
               </p>
@@ -26,8 +27,7 @@ const App = () => {
           </div>
         </section>
 
-        <section id="about">
-          {/* About Section */}
+        <section id="about" className="w-100 ">
           <AboutSection />
         </section>
 
@@ -36,7 +36,7 @@ const App = () => {
           <PlanSection />
         </section>
 
-        <section id="contact">
+        <section id="contact" className="w-100 ">
           {/* Contact Section */}
           <ContactSection />
         </section>

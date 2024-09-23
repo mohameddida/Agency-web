@@ -3,14 +3,14 @@ import logo from "../assets/logoabout.png";
 
 const AboutSection = () => {
   return (
-    <section className="bg-blue-950 min-h-screen text-white w-full relative flex items-center justify-center py-12 px-4">
+    <section className="bg-blue-950 min-h-screen text-white w-full flex items-center justify-center py-12 px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
         {/* Text Section */}
-        <div className="md:w-1/2 text-center md:text-left space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold">
+        <div className="md:w-1/2 text-center md:text-left space-y-4 md:space-y-6">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             Welcome to Golden Dunes Voyage
           </h2>
-          <p className="leading-relaxed text-base md:text-lg">
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
             Golden Dunes Voyage is a travel agency and tour provider in Tozeur.
             We offer various programs in the desert of Tozeur and southern
             Tunisia. Our mission is to provide you with comfort, guidance, and
@@ -22,7 +22,7 @@ const AboutSection = () => {
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            className="w-32 h-32 md:w-48 md:h-48 object-contain"
+            className="w-28 h-28 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain"
             src={logo}
             alt="Golden Dunes Voyage logo"
           />

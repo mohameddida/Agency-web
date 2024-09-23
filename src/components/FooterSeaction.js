@@ -16,27 +16,29 @@ const FooterSection = () => {
             height="154"
             width="247"
           />
-          <p className="mt-4 font-medium text-center">
+          <p className="mt-4 font-medium text-center text-base md:text-lg">
             Find your best Tours with us
           </p>
         </div>
 
         {/* Location and Contact Information */}
         <div className="flex flex-col items-center">
-          <h3 className="font-bold text-2xl mb-4">Contact Us</h3>
-          <p className="font-medium">
+          <h3 className="font-bold text-xl md:text-2xl mb-4">Contact Us</h3>
+          <p className="font-medium text-base md:text-lg">
             Location: Rue Farhat, 2200 Tozeur, Tunisia
           </p>
-          <p className="font-medium">Email: goldendunesvoyages@gmail.com</p>
-          <p className="font-medium">
+          <p className="font-medium text-base md:text-lg">
+            Email: goldendunesvoyages@gmail.com
+          </p>
+          <p className="font-medium text-base md:text-lg">
             Phone: +216 97 346 845 / +216 76 452 513
           </p>
         </div>
 
         {/* Social Media Links */}
         <div className="flex flex-col items-center">
-          <h3 className="font-bold text-2xl mb-4">Social Links</h3>
-          <div className="flex justify-center space-x-6 text-white text-2xl">
+          <h3 className="font-bold text-xl md:text-2xl mb-4">Social Links</h3>
+          <div className="flex justify-center space-x-6 text-white text-2xl md:text-3xl">
             <FaFacebookSquare />
             <FaInstagramSquare />
             <BiLogoGmail />
@@ -45,7 +47,7 @@ const FooterSection = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center mt-10 text-sm">
+      <div className="text-center mt-10 text-sm md:text-base">
         <p>&copy; 2024 Golden Dunes Voyage. All rights reserved.</p>
       </div>
     </footer>
