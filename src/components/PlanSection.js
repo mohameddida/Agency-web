@@ -17,7 +17,6 @@ const PlanSection = () => {
 
       <div className="container mx-auto">
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {/* Plan 1 */}
           <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
             <img
               className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"
@@ -32,7 +31,6 @@ const PlanSection = () => {
             </p>
           </div>
 
-          {/* Plan 2 */}
           <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
             <img
               className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"
@@ -47,7 +45,6 @@ const PlanSection = () => {
             </p>
           </div>
 
-          {/* Plan 3 */}
           <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
             <img
               className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"

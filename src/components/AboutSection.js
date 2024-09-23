@@ -5,7 +5,6 @@ const AboutSection = () => {
   return (
     <section className="bg-blue-200 min-h-screen  w-full flex items-center justify-center py-12 px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-        {/* Text Section */}
         <div className="md:w-1/2 text-center md:text-left space-y-4 md:space-y-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             Welcome to Golden Dunes Voyages
@@ -19,7 +18,6 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
           <img
             className="w-28 h-28 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain"

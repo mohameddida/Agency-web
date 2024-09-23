@@ -6,7 +6,6 @@ const FooterSection = () => {
   return (
     <footer className="bg-blue-100  w-full py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-center">
-        {/* Logo and Slogan */}
         <div className="flex flex-col items-center">
           <img
             src={logo}
@@ -20,7 +19,6 @@ const FooterSection = () => {
           </p>
         </div>
 
-        {/* Location and Contact Information */}
         <div className="flex flex-col items-center">
           <h3 className="font-bold text-xl md:text-2xl mb-4">Contact Us</h3>
           <p className="font-medium text-base md:text-lg">
@@ -34,7 +32,6 @@ const FooterSection = () => {
           </p>
         </div>
 
-        {/* Social Media Links */}
         <div className="flex flex-col items-center">
           <h3 className="font-bold text-xl md:text-2xl mb-4">Social Links</h3>
           <div className="flex justify-center space-x-6 text-gray-500  text-2xl md:text-3xl">
@@ -45,7 +42,6 @@ const FooterSection = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="text-center mt-10 text-sm md:text-base">
         <p>&copy; 2024 Golden Dunes Voyage. All rights reserved.</p>
       </div>
