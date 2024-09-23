@@ -27,7 +27,7 @@ const FooterSection = () => {
           <p className="font-medium">
             Location: Rue Farhat, 2200 Tozeur, Tunisia
           </p>
-          <p className="font-medium">Email: example@example.com</p>
+          <p className="font-medium">Email: goldendunesvoyages@gmail.com</p>
           <p className="font-medium">
             Phone: +216 97 346 845 / +216 76 452 513
           </p>
