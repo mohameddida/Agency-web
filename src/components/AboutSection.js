@@ -3,12 +3,12 @@ import logo from "../assets/logoabout.png";
 
 const AboutSection = () => {
   return (
-    <section className="bg-blue-950 min-h-screen text-white w-full flex items-center justify-center py-12 px-4">
+    <section className="bg-blue-200 min-h-screen  w-full flex items-center justify-center py-12 px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
         {/* Text Section */}
         <div className="md:w-1/2 text-center md:text-left space-y-4 md:space-y-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-            Welcome to Golden Dunes Voyage
+            Welcome to Golden Dunes Voyages
           </h2>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed">
             Golden Dunes Voyage is a travel agency and tour provider in Tozeur.

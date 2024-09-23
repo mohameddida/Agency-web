@@ -123,7 +123,7 @@ const ContactSection = () => {
                 htmlFor="floating_phone"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0"
               >
-                Phone Number (123-456-7890)
+                Phone Number (+216-xx-xxx-xxx)
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
