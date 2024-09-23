@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
-
+import { toast } from "react-toastify";
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -23,7 +23,7 @@ const ContactSection = () => {
       username: formData.username,
       phone: formData.phone,
       subject: formData.subject,
-      message: formData.message,
+      message: `the user ${formData.username} \n email : ${formData.email} \n  Phone number : ${formData.phone} \n  message :  ${formData.message}`,
       recipient_email: "testmohamed002@gmail.com",
     };
 
@@ -37,7 +37,9 @@ const ContactSection = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
+          toast.success("Message sent successfully!", {
+            position: "bottom-center",
+          });
           setFormData({
             email: "",
             username: "",
@@ -48,7 +50,9 @@ const ContactSection = () => {
         },
         (err) => {
           console.log("FAILED...", err);
-          alert("Failed to send message. Please try again later.");
+          toast.error("Failed to send message. Please try again later.", {
+            position: "bottom-center",
+          });
         }
       );
   };
