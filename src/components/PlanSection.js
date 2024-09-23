@@ -6,12 +6,13 @@ import plan3 from "../assets/plan3.jpg";
 const PlanSection = () => {
   return (
     <section className="min-h-screen py-12 px-4 bg-blue-50">
-      <div className="text-left m-12 container">
+      <div className="text-left mb-12 container md:ml-16">
         <h3 className="text-3xl font-bold text-blue-800">Our Plans for You</h3>
         <p className="text-gray-600 text-lg mt-2">
           Make the right destination with the right plan
         </p>
       </div>
+
       <div className="container mx-auto">
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {/* Plan 1 */}
@@ -21,7 +22,7 @@ const PlanSection = () => {
               src={plan1}
               alt="Montagne"
             />
-            <h3 className="text-xl font-bold text-blue-800">Montagne</h3>
+            <h3 className="text-xl font-bold text-blue-800 ">Montagne</h3>
             <p className="text-gray-600 mt-2">
               Oasis de montagne Chebika, Tamerza, Mides
             </p>
