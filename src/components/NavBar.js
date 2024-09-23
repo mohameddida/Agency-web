@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav
       className={`fixed  w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
     >
-      <div className="container mx-auto p-6 flex items-center md:justify-between justify-around">
+      <div className="container mx-auto p-6 flex items-center justify-between ">
         <div className="flex items-center">
           <img className="w-16 h-16 md:w-20 md:h-20" src={logo} alt="Logo" />
         </div>
