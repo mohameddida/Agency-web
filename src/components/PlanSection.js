@@ -1,6 +1,6 @@
 import React from "react";
-import plan2 from "../assets/homeCover.png";
-import plan1 from "../assets/plan1.jpg";
+import plan1 from "../assets/homeCover.png";
+import plan2 from "../assets/plan2.jpg";
 import plan3 from "../assets/plan3.jpg";
 
 const PlanSection = () => {
@@ -25,7 +25,7 @@ const PlanSection = () => {
               alt="Montagne"
             />
             <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              Montagne
+              Excursion
             </h3>
             <p className="text-gray-600 mt-1 text-sm sm:text-base">
               Oasis de montagne Chebika, Tamerza, Mides
@@ -40,10 +40,10 @@ const PlanSection = () => {
               alt="Excursion"
             />
             <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              Excursion
+              sercuits
             </h3>
             <p className="text-gray-600 mt-1 text-sm sm:text-base">
-              Chott Djerid + Canyon Sidi Bouhlel
+              sercuits Ksar Ghilane
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const PlanSection = () => {
               alt="Trekking/Tours"
             />
             <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              Trekking/Tours
+              Trekking
             </h3>
             <p className="text-gray-600 mt-1 text-sm sm:text-base">
               4 Hours in Canyon Mides
