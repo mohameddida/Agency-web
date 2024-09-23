@@ -1,6 +1,6 @@
 import React from "react";
+import plan2 from "../assets/homeCover.png";
 import plan1 from "../assets/plan1.jpg";
-import plan2 from "../assets/plan2.jpg";
 import plan3 from "../assets/plan3.jpg";
 
 const PlanSection = () => {
