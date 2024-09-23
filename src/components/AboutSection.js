@@ -11,7 +11,7 @@ const AboutSection = () => {
             Welcome to Golden Dunes Voyages
           </h2>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-            Golden Dunes Voyage is a travel agency and tour provider in Tozeur.
+            Golden Dunes Voyages is a travel agency and tour provider in Tozeur.
             We offer various programs in the desert of Tozeur and southern
             Tunisia. Our mission is to provide you with comfort, guidance, and
             fun on our tours. Join us to explore different places with a perfect
