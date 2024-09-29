@@ -71,10 +71,8 @@ const PlanDetails = () => {
   const planId = parseInt(id);
   const selectedPlan = trekkingPlans.find((plan) => plan.id === planId);
 
-  // Ref for the description div
   const descriptionRef = useRef(null);
 
-  // Adjust height of the description div based on its scroll height
   useEffect(() => {
     if (descriptionRef.current) {
       descriptionRef.current.style.height = "auto"; // Reset height
@@ -82,16 +80,9 @@ const PlanDetails = () => {
     }
   }, [selectedPlan?.description]);
 
-  // Handle plan not found case
   if (!selectedPlan) {
     return <p className="text-center text-xl">Plan not found.</p>;
   }
-
-  // Function to copy the description to clipboard
-  const handleCopy = () => {
-    navigator.clipboard.writeText(selectedPlan.description);
-    alert("Description copied to clipboard!");
-  };
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row mt-6 items-center justify-center p-4 md:p-8 lg:p-16 bg-blue-50">
