@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
+  const location = useLocation();
   const [navBackground, setNavBackground] = useState("bg-transparent");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 50 || location.pathname !== "/") {
         setNavBackground("bg-blue-950");
       } else {
         setNavBackground("bg-transparent");
@@ -19,32 +22,77 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [location]);
 
   return (
     <nav
-      className={`fixed  w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
+      className={`fixed w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
     >
       <div className="container mx-auto p-6 flex items-center justify-between ">
+        {/* Logo */}
         <div className="flex items-center">
-          <img className="w-16 h-16 md:w-20 md:h-20" src={logo} alt="Logo" />
+          <RouterLink to="/">
+            <img className="w-16 h-16 md:w-20 md:h-20" src={logo} alt="Logo" />
+          </RouterLink>
         </div>
 
+        {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-lg">
-          <a href="#home" className="text-white hover:text-gray-200">
-            Home
-          </a>
-          <a href="#about" className="text-white hover:text-gray-200">
-            About
-          </a>
-          <a href="#services" className="text-white hover:text-gray-200">
-            Services
-          </a>
-          <a href="#contact" className="text-white hover:text-gray-200">
-            Contact
-          </a>
+          <RouterLink to="/" className="text-white hover:text-gray-200">
+            Accueil
+          </RouterLink>
+          {location.pathname === "/" ? (
+            <>
+              <ScrollLink
+                to="about"
+                smooth={true}
+                duration={500}
+                className="text-white hover:text-gray-200 cursor-pointer"
+              >
+                À Propos
+              </ScrollLink>
+              <ScrollLink
+                to="services"
+                smooth={true}
+                duration={500}
+                className="text-white hover:text-gray-200 cursor-pointer"
+              >
+                Services
+              </ScrollLink>
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="text-white hover:text-gray-200 cursor-pointer"
+              >
+                Contact
+              </ScrollLink>
+            </>
+          ) : (
+            <>
+              <RouterLink
+                to="/about"
+                className="text-white hover:text-gray-200"
+              >
+                À Propos
+              </RouterLink>
+              <RouterLink
+                to="/services"
+                className="text-white hover:text-gray-200"
+              >
+                Services
+              </RouterLink>
+              <RouterLink
+                to="/contact"
+                className="text-white hover:text-gray-200"
+              >
+                Contact
+              </RouterLink>
+            </>
+          )}
         </div>
 
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={() => setOpen(!open)}
@@ -68,21 +116,44 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-blue-950 text-white">
           <div className="p-4 space-y-2 text-center">
-            <a href="#home" className="block py-2 hover:text-gray-200">
-              Home
-            </a>
-            <a href="#about" className="block py-2 hover:text-gray-200">
-              About
-            </a>
-            <a href="#services" className="block py-2 hover:text-gray-200">
+            <RouterLink
+              to="/"
+              className="block py-2 hover:text-gray-200"
+              onClick={() => setOpen(false)}
+            >
+              Accueil
+            </RouterLink>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              className="block py-2 hover:text-gray-200 cursor-pointer"
+              onClick={() => setOpen(false)}
+            >
+              À Propos
+            </ScrollLink>
+            <ScrollLink
+              to="services"
+              smooth={true}
+              duration={500}
+              className="block py-2 hover:text-gray-200 cursor-pointer"
+              onClick={() => setOpen(false)}
+            >
               Services
-            </a>
-            <a href="#contact" className="block py-2 hover:text-gray-200">
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="block py-2 hover:text-gray-200 cursor-pointer"
+              onClick={() => setOpen(false)}
+            >
               Contact
-            </a>
+            </ScrollLink>
           </div>
         </div>
       )}

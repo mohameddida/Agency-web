@@ -1,63 +1,64 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import plan1 from "../assets/homeCover.png";
 import plan2 from "../assets/plan2.jpg";
 import plan3 from "../assets/plan3.jpg";
 
 const PlanSection = () => {
+  const plans = [
+    {
+      id: 1,
+      title: "Montagne",
+      description: "Oasis de montagne Chebika, Tamerza, Mides",
+      image: plan1,
+    },
+    {
+      id: 2,
+      title: "Circuits",
+      description: "Circuits Ksar Ghilane",
+      image: plan2,
+    },
+    {
+      id: 3,
+      title: "Trekking",
+      description: "4 heures dans le canyon de Mides",
+      image: plan3,
+    },
+  ];
+
   return (
     <section className="min-h-screen py-12 px-4 bg-blue-50">
       <div className="text-left mb-12 container mx-auto md:ml-16">
         <h3 className="text-2xl sm:text-3xl font-bold text-blue-800">
-          Our Plans for You
+          Nos Plans pour Vous
         </h3>
         <p className="text-gray-600 text-base sm:text-lg mt-2">
-          Make the right destination with the right plan
+          Faites le bon choix de destination avec le bon plan
         </p>
       </div>
 
       <div className="container mx-auto">
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
-            <img
-              className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"
-              src={plan1}
-              alt="Montagne"
-            />
-            <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              Excursion
-            </h3>
-            <p className="text-gray-600 mt-1 text-sm sm:text-base">
-              Oasis de montagne Chebika, Tamerza, Mides, Ong Jmal
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
-            <img
-              className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"
-              src={plan2}
-              alt="Excursion"
-            />
-            <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              sercuits
-            </h3>
-            <p className="text-gray-600 mt-1 text-sm sm:text-base">
-              sercuits Ksar Ghilane
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center text-center p-4 sm:p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105">
-            <img
-              className="w-full h-36 sm:h-48 object-cover rounded-2xl mb-4"
-              src={plan3}
-              alt="Trekking/Tours"
-            />
-            <h3 className="text-lg sm:text-xl font-bold text-blue-800">
-              Trekking
-            </h3>
-            <p className="text-gray-600 mt-1 text-sm sm:text-base">
-              4 Hours in Canyon Mides
-            </p>
-          </div>
+          {plans.map((plan) => (
+            <div
+              key={plan.id}
+              className="flex flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg transition-transform duration-300 hover:shadow-xl hover:scale-105"
+            >
+              <img
+                className="w-full h-48 object-cover rounded-2xl mb-4"
+                src={plan.image}
+                alt={plan.title}
+              />
+              <h3 className="text-xl font-bold text-blue-800">{plan.title}</h3>
+              <p className="text-gray-600 mt-2">{plan.description}</p>
+              <Link
+                to={`/plan/${plan.id}`}
+                className="text-blue-500 hover:underline mt-4"
+              >
+                View Details
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>

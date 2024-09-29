@@ -62,7 +62,7 @@ const ContactSection = () => {
     <section className="min-h-screen flex items-center justify-center py-12 px-4 bg-white">
       <div className="container mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          How can we assist you?
+          Comment pouvons-nous vous aider ?
         </h2>
         <form
           onSubmit={handleSubmit}
@@ -84,7 +84,7 @@ const ContactSection = () => {
                 htmlFor="floating_email"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0"
               >
-                Email address
+                Adresse e-mail
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -102,7 +102,7 @@ const ContactSection = () => {
                 htmlFor="username"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0"
               >
-                Enter Your Name
+                Entrez votre nom
               </label>
             </div>
           </div>
@@ -123,7 +123,7 @@ const ContactSection = () => {
                 htmlFor="floating_phone"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0"
               >
-                Phone Number (+216-xx-xxx-xxx)
+                Numéro de téléphone (+216-xx-xxx-xxx)
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -141,7 +141,7 @@ const ContactSection = () => {
                 htmlFor="subject"
                 className="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0"
               >
-                Subject
+                Sujet
               </label>
             </div>
           </div>
@@ -168,7 +168,7 @@ const ContactSection = () => {
             type="submit"
             className="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full md:w-auto px-5 py-2.5 text-center"
           >
-            Send Message
+            Envoyer le message
           </button>
         </form>
       </div>
