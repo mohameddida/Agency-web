@@ -29,14 +29,16 @@ const Navbar = () => {
       className={`fixed w-full z-10 transition duration-300 ease-in-out ${navBackground}`}
     >
       <div className="container mx-auto p-6 flex items-center justify-between ">
-        {/* Logo */}
-        <div className="flex items-center">
-          <RouterLink to="/">
-            <img className="w-16 h-16 md:w-20 md:h-20" src={logo} alt="Logo" />
+        <div className="flex items-center w-1/2">
+          <RouterLink to="/" className="flex items-center gap-2 w-100">
+            <img className="w-16 h-10 md:w-20 md:h-16" src={logo} alt="Logo" />
+            <h2 className=" lg:font-extrabold xl:text-4xl lg:text-xl md:text-base md:font-bold text-white sm:hidden">
+              {" "}
+              Golden Dunes Voyages
+            </h2>
           </RouterLink>
         </div>
 
-        {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-lg">
           <RouterLink to="/" className="text-white hover:text-gray-200">
             Accueil
@@ -92,7 +94,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={() => setOpen(!open)}
@@ -116,7 +117,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-blue-950 text-white">
           <div className="p-4 space-y-2 text-center">

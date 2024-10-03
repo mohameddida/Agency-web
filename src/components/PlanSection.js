@@ -8,14 +8,14 @@ const PlanSection = () => {
   const plans = [
     {
       id: 1,
-      title: "Montagne",
-      description: "Oasis de montagne Chebika, Tamerza, Mides",
+      title: "Excursion",
+      description: "Chebika, Tamerza, Mides, Ong Jmal",
       image: plan1,
     },
     {
       id: 2,
       title: "Circuits",
-      description: "Circuits Ksar Ghilane",
+      description: "Circuits à la carte",
       image: plan2,
     },
     {
