@@ -62,7 +62,7 @@ const PlanDetails = () => {
             "Diner spectaculeuse",
             "3 jrs : Direction vers  tozeur",
             "Arret 1 : ksar hdada",
-            "Arret 2 : ksar hall",
+            "Arret 2 : ksar hallouf",
           ],
         },
       ],
@@ -82,9 +82,9 @@ const PlanDetails = () => {
           ],
         },
         {
-          title: "Ong djmal",
+          title: "Ong Jmal",
           plan: [
-            `Ong Jmal  « le cou du chameau » est un magnifique site,en plein Sahara. à Onk Jemel vous attendent des sensations fortes de conduite dans les dunes, offrant des moments exaltants sur le terrain sablonneux puis  en visitant le village du cinéma Star Wars, où la saga des films emblématiques a pris vie dans le décor époustouflant du désert. Plongez dans l'univers cinématographique de cette destination unique.`,
+            `Ong Jmal  « le cou du chameau » est un magnifique site,en plein Sahara. à Ong Jemel vous attendent des sensations fortes de conduite dans les dunes, offrant des moments exaltants sur le terrain sablonneux puis  en visitant le village du cinéma Star Wars, où la saga des films emblématiques a pris vie dans le décor époustouflant du désert. Plongez dans l'univers cinématographique de cette destination unique.`,
           ],
         },
       ],
