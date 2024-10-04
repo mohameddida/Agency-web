@@ -69,7 +69,7 @@ const PlanDetails = () => {
     },
     {
       id: 1,
-      title: "Excursion 4x4 - Oasis de Montagne",
+      title: "Excursion 4x4",
       images: [excursions1, excursions2, excursions3, excursions4],
       description: [
         {

@@ -9,7 +9,7 @@ const AboutSection = () => {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
             Bienvenue chez Golden Dunes Voyages
           </h2>
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed">
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed text-justify font-medium">
             Golden Dunes Voyages est une agence de voyage et un fournisseur de
             circuits touristiques à Tozeur. <br /> Nous offrons divers
             programmes dans le désert de Tozeur et le sud de la Tunisie.
