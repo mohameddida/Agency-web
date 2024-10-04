@@ -11,11 +11,12 @@ const AboutSection = () => {
           </h2>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed">
             Golden Dunes Voyages est une agence de voyage et un fournisseur de
-            circuits touristiques à Tozeur. Nous offrons divers programmes dans
-            le désert de Tozeur et le sud de la Tunisie. Notre mission est de
-            vous offrir confort, accompagnement et plaisir lors de nos
-            excursions. Rejoignez-nous pour explorer différents lieux avec un
-            mélange parfait d'abordabilité et de service de qualité.
+            circuits touristiques à Tozeur. <br /> Nous offrons divers
+            programmes dans le désert de Tozeur et le sud de la Tunisie.
+            <br /> Notre mission est de vous offrir confort, accompagnement et
+            plaisir lors de nos excursions. <br />
+            Rejoignez-nous pour explorer différents lieux avec un mélange
+            parfait d'abordabilité et de service de qualité.
           </p>
         </div>
 
