@@ -25,15 +25,15 @@ const ContactSection = () => {
       phone: formData.phone,
       subject: formData.subject,
       message: `the user ${formData.username} \n email : ${formData.email} \n  Phone number : ${formData.phone} \n  message :  ${formData.message}`,
-      recipient_email: "testmohamed002@gmail.com",
+      recipient_email: "goldendunesvoyages@gmail.com",
     };
 
     emailjs
       .send(
-        "service_vpn4f2p",
-        "template_gake6dd",
+        "service_o3qvqcs",
+        "template_gc51zs8",
         templateParams,
-        "X9w-qXJ1b7i33jddX"
+        "zBEdg0DdZOz9Kv3OO"
       )
       .then(
         (response) => {
